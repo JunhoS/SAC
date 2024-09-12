@@ -105,6 +105,10 @@
                    series
                }
                eChart.setOption(option);
+
+               eChart.on("click", (param) => {
+                    this.dispatchEvent(new Event("onClick"));
+               });
           
           }
 
