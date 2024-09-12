@@ -66,10 +66,7 @@
           // }
           async render () {
               let dataBinding = this.dataBinding
-              if (!dataBinding || dataBinding.state !== 'success') { 
-                   dataBinding = {"data":[{"dimensions_0":{"id":"[Location_4nm2e04531].[State_47acc246_4m5x6u3k6s].&[SA1]","label":"California","isNode":true,"isCollapsed":true},"measures_0":{"raw":173481592.9702347,"formatted":"173.48 Million","unit":"USD"}},{"dimensions_0":{"id":"[Location_4nm2e04531].[State_47acc246_4m5x6u3k6s].&[SA2]","label":"Nevada","isNode":true,"isCollapsed":true},"measures_0":{"raw":13253635.0990325,"formatted":"13.25 Million","unit":"USD"}},{"dimensions_0":{"id":"[Location_4nm2e04531].[State_47acc246_4m5x6u3k6s].&[SA3]","label":"Oregon","isNode":true,"isCollapsed":true},"measures_0":{"raw":48301721.301893,"formatted":"48.30 Million","unit":"USD"}}]}
-
-              }
+              if (!dataBinding || dataBinding.state !== 'success') return;
           
               await getScriptPromisify('https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js')
           
