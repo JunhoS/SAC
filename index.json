@@ -2,31 +2,35 @@
  "eula": "",
  "vendor": "SAP",
  "license": "",
- "id": "com.sap.sac.exercise.001",
+ "id": "com.sap.sac.june.001",
  "version": "1.0.0",
- "name": "Exercise-01",
- "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzklEQVQ4jWNgoBAwkqLYOLGjguH//1RGxv+7z8yvymBgYGBgIcm2//8lGRgZlP7/Z5CDiTGRYgA2QLEBOL2gFVrPxsXDYcfAwMDw7cuPQ9dWN/4iyQBebi75vwz/dkPZagwMDLexqaOeF4wT2jcyMjL4Mfz/33tmQVUJsQYgueA/K4RmZCXFBQMfjQNvADwWGBkZHv3/z3CPgZHxOQMDAwPjv9/fGJiZ7sLZDAwM/xkZnzP8/3+PkZHhEaUWwwGjSWL7f0oMYGFgYFCmxAAACtUz95booNoAAAAASUVORK5CYII=",
+ "name": "June-01",
+ "icon": "data:image/png;base64,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">",
  "newInstancePrefix": "ExerciseCustomWidget",
- "description": "커스텀 위젯 가이드 예시 01",
+ "description": "June 커스텀 위젯 001",
  "webcomponents": [
- {
- "kind": "main",
- "tag": "com-sap-sac-exercise-001-main",
- "url": "https://sungjun1004.github.io/CW_TEMP/Step_01/main.js",
- "integrity": "",
- "ignoreIntegrity": true
- }
+	 {
+		 "kind": "main",
+		 "tag": "com-sap-sac-june-001-main",
+		 "url": "https://junhos.github.io/SAC/main.js",
+		 "integrity": "",
+		 "ignoreIntegrity": true
+	 }
  ],
  "properties": {
- "width": {
- "type": "integer",
- "default": 600
+	 "width": {
+		 "type": "integer",
+		 "default": 600
+	 },
+	 "height": {
+		 "type": "integer",
+		 "default": 420
+	 }
  },
- "height": {
- "type": "integer",
- "default": 420
+ "methods":{
+	 
+ },
+ "events":{
+	 
  }
- },
- "methods":{},
- "events":{}
 }
