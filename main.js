@@ -111,7 +111,7 @@
                }
                eChart.setOption(option);
 
-               eChart.on("click", (param) => {
+               eChart.on("click", (params) => {
                     const { seriesIndex, seriesName, dataIndex, data, name } = params
                     this._selectedDataPoint = { seriesIndex, seriesName, dataIndex, data, name }
                     this.dispatchEvent(new Event("onClick"));
