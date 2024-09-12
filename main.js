@@ -20,14 +20,21 @@
           }
           
           onCustomWidgetAfterUpdate (changedProps) {
+               this.render()
           }
           
           onCustomWidgetDestroy () {
           }
           
-          render () {
-              this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
+          async render () {
+              const dataBinding = this.dataBinding
+              if (!dataBinding || dataBinding.state !== 'success') {
+                  return
+              }
+     
+              this._root.textContent = JSON.stringify(dataBinding)
           }
+
 
      }
      customElements.define('com-sap-sac-june-001-main', Main)
