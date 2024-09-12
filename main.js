@@ -57,7 +57,7 @@
               this.render()
           }
 
-          getSelectedPoiont(){
+          getSelectedDataPoint(){
                return this._selectedDataPoint;
           }
 
