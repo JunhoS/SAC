@@ -36,6 +36,7 @@
            this._root = this._shadowRoot.getElementById('root')
 
              this._eChart = null;
+             this._selectedDataPoint = {};
         }
 
           onCustomWidgetResize (width, height) {
@@ -54,6 +55,10 @@
               this.seriesType = seriesType
               this.dispatchEvent(new CustomEvent('propertiesChanged', { detail: { properties: { seriesType } } }))
               this.render()
+          }
+
+          getSelectedPoiont(){
+               return this._selectedDataPoint;
           }
 
           // async render () {
@@ -107,6 +112,8 @@
                eChart.setOption(option);
 
                eChart.on("click", (param) => {
+                    const { seriesIndex, seriesName, dataIndex, data, name } = params
+                    this._selectedDataPoint = { seriesIndex, seriesName, dataIndex, data, name }
                     this.dispatchEvent(new Event("onClick"));
                });
           
